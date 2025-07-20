@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" ...>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>me.yejunhacker</groupId>
+  <artifactId>BuildMap</artifactId>
+  <version>1.0</version>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
+        <configuration>
+          <source>17</source>
+          <target>17</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>me.yejunhacker.buildmap.BuildMapPlugin</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <!-- Bukkit / Paper API 는 local 또는 ci build에서는 수동 제공 -->
+  </dependencies>
+</project>
