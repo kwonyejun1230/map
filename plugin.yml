@@ -1,0 +1,8 @@
+name: BuildMap
+version: 1.0
+main: me.yejunhacker.buildmap.BuildMapPlugin
+api-version: 1.21
+commands:
+  map:
+    description: 건축 미니맵 GUI 열기
+    usage: /map
